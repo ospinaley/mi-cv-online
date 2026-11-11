@@ -47,3 +47,17 @@ code.tag { background: var(--bg-black-50); padding: 1px 6px; border-radius: 4px;
 
 /* Color de texto por defecto: sigue el tema claro/oscuro (antes los textos sin regla propia salian negros en el modo oscuro) */
 body { color: var(--text-black-700); }
+
+/* Botones de descarga del PDF: efecto al pasar el ratón (o al enfocarlos con el teclado) */
+.pdf-btn img { transition: transform .2s ease, filter .2s ease; }
+.pdf-btn:hover img,
+.pdf-btn:focus-visible img {
+    transform: translateY(-4px) scale(1.05);
+    filter: brightness(1.1) drop-shadow(0 8px 10px rgba(0, 0, 0, .35));
+}
+.pdf-btn:active img { transform: translateY(-1px) scale(1.02); }
+.pdf-btn:focus-visible { outline: 3px solid var(--skin-color); outline-offset: 4px; border-radius: 12px; }
+@media (prefers-reduced-motion: reduce) {
+    .pdf-btn img { transition: none; }
+    .pdf-btn:hover img, .pdf-btn:focus-visible img { transform: none; }
+}
