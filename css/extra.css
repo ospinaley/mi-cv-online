@@ -1,0 +1,46 @@
+/* Estilos añadidos para el CV docente. Reutilizan las variables de style.css */
+
+.about .about-content .about-text .lead { font-size: 17px; line-height: 1.7; }
+
+.cv-block { margin-bottom: 40px; }
+.cv-block h3.title { margin-bottom: 20px; }
+
+.pill-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; }
+.pill-list li {
+    padding: 6px 14px; border-radius: 30px; font-size: 14px;
+    color: var(--text-black-900); background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+}
+
+.card-grid { display: flex; flex-wrap: wrap; }
+.card {
+    flex: 0 0 33.33%; max-width: 33.33%; padding: 0 15px; margin-bottom: 30px;
+}
+.card-inner {
+    height: 100%; padding: 25px 20px; border-radius: 10px;
+    background: var(--bg-black-100); border: 1px solid var(--bg-black-50);
+}
+.card-inner h4 { font-size: 18px; margin-bottom: 10px; color: var(--text-black-900); }
+.card-inner h4 span { color: var(--skin-color); margin-right: 6px; }
+.card-inner p, .card-inner li { font-size: 15px; line-height: 1.6; color: var(--text-black-700); }
+.card-inner ul { margin-top: 8px; }
+.card-inner li::before { content: "› "; color: var(--skin-color); }
+code.tag { background: var(--bg-black-50); padding: 1px 6px; border-radius: 4px; font-size: 14px; }
+
+.letter {
+    max-width: 780px; padding: 30px; border-radius: 10px;
+    background: var(--bg-black-100); border: 1px solid var(--bg-black-50);
+}
+.letter p { font-size: 16px; line-height: 1.8; margin-bottom: 14px; color: var(--text-black-700); }
+
+.pdf-btn { display: inline-block; margin-top: 10px; vertical-align: middle; }
+.home-info .pdf-btn { margin-left: 15px; }
+.pdf-btn img { width: 220px; max-width: 100%; display: block; }
+
+.pendiente {
+    border: 2px dashed var(--skin-color); border-radius: 10px; padding: 18px;
+    font-size: 15px; color: var(--text-black-700);
+}
+
+@media (max-width: 991px) { .card { flex: 0 0 50%; max-width: 50%; } }
+@media (max-width: 767px) { .card { flex: 0 0 100%; max-width: 100%; } }

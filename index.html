@@ -4,19 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabian Alexander Ospina Leiva · Docente de HTML y negocio digital</title>
+    <meta name="description" content="CV de Fabian Alexander Ospina Leiva: habilitado para la docencia (SSCE0110), con experiencia práctica en desarrollo web, e-commerce y automatización.">
+
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/extra.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    
-    <!-- inicia enlace para la imagen previa que aparece al compartir el link -->
-    <meta property="og:title" content="Mi CV - Fabian Alexander Ospina Leiva">
 
-  <meta property="og:description" content="Desarrollador web y este es un entrante. ¡Haz Click!">
+    <!-- Imagen previa al compartir el enlace (la URL debe ser absoluta) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fabian Alexander Ospina Leiva · Docente de HTML y negocio digital">
+    <meta property="og:description" content="Habilitado para la docencia (SSCE0110). Experiencia práctica en desarrollo web, e-commerce y automatización.">
+    <meta property="og:image" content="https://ospinaley.github.io/mi-cv-online/img/FabianOspinaLey-imagen-de-portada.jpg">
+    <meta property="og:url" content="https://ospinaley.github.io/mi-cv-online/">
 
-  <meta property="og:image" content="https://ospinaley.github.io/mi-cv-online/img/preview.jpg">
-
-  <meta property="og:url" content="https://ospinaley.github.io/mi-cv-online/">
-    <!-- termina enlace para la imagen previa que aparece al compartir el link -->
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -27,15 +32,11 @@
     <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
     <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-
     <link rel="stylesheet" href="css/style.switcher.css">
     <!--Style Switcher End-->
-
-    <title>Fabian Ospina Ley</title>
 </head>
 
 <body>
-    <!--Inicio contenedor del Main-->
     <div class="main-container">
         <!-- Inicio Aside -->
         <div class="aside">
@@ -43,224 +44,150 @@
                 <a href="#"><span>i</span>ndice</a>
             </div>
             <div class="nav-toggler">
-                <span> </span> <!--para crear un espacio-->
-            </div> <!--Toggler es un conmutador-->
+                <span> </span>
+            </div>
             <ul class="nav">
-                <li>
-                    <a href="#home" class="active"><i class="fa-solid fa-house"></i> Inicio </a>
-                </li>
-                <li>
-                    <a href="#about"><i class="fa-solid fa-user"></i> Acerca de mi</a>
-                </li>
-                <li>
-                    <!-- <a href="#services"><i class="fa-solid fa-list"></i> Servicios</a> -->
-                </li>
-                <li>
-                    <!-- <a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portafolio</a> -->
-                </li>
-                <li>
-                    <!-- <a href="#contact"><i class="fa-solid fa-comments"></i> Contacto</a> -->
-                </li>
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> Perfil</a></li>
+                <li><a href="#trayectoria"><i class="fa-solid fa-laptop-code"></i> Trayectoria digital</a></li>
+                <li><a href="#formacion"><i class="fa-solid fa-graduation-cap"></i> Formación</a></li>
+                <li><a href="#temario"><i class="fa-solid fa-chalkboard-user"></i> Temario HTML</a></li>
+                <li><a href="#carta"><i class="fa-solid fa-envelope-open-text"></i> Carta</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-comments"></i> Contacto</a></li>
             </ul>
         </div>
         <!-- Fin Aside -->
-        <!--Inicio contenido del Main-->
+
         <div class="main-content">
-            <!--Home section-->
+
+            <!-- Inicio -->
             <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello">Hola, yo soy<span class="name"> Fabian Alexander Ospina Leiva</span></h3>
-                            <h3 class="my-profession">Y soy <span class="typing"></span>
-                            </h3>
-                            <p>También soy sargento segundo retirado, forjado en la disciplina, la responsabilidad y la gestión en entornos donde no hay margen para el error.</p>
-
-                            <P>Hay dos tipos de personas: las que se frenan ante el reto y las que se crecen con él. Yo soy de los segundos.</P>
-
-                            <p>Aprendo rápido, me adapto mejor y no espero a que me lo expliquen: si algo no funciona, lo abro, lo entiendo y lo hago andar. Hoy quiero aplicar esa mentalidad cómo <strong>escribiente</strong> en Mercamadrid.</p>
-
-                            <a href="#contact" class="btn hire-me">Contrátame</a>
+                            <h3 class="my-profession">Y soy <span class="typing"></span></h3>
+                            <p>Estoy habilitado para la docencia en la formación profesional para el empleo (SSCE0110) y llevo desde febrero de 2026 construyendo herramientas digitales reales para el negocio familiar ADG: un sistema de caja (TPV), un CRM de clientes y una tienda online.</p>
+                            <p>Enseño lo que uso: empezar desde cero, paso a paso, con ejemplos que funcionan.</p>
+                            <a href="#carta" class="btn hire-me">Leer mi carta</a>
+                            <a href="Fabian-Ospina-Leiva-CV-Memoria-Carta.pdf" download class="pdf-btn" aria-label="Descargar CV, carta y memoria en PDF">
+                                <img src="img/Boton_PDF.png" alt="Descargar PDF">
+                            </a>
                         </div>
-                        <div class="home-img padd-15"><img src="img/FabianOspinaLey-imagen-de-portada.jpg"
-                                alt="Mi imagen de perfil">
+                        <div class="home-img padd-15">
+                            <img src="img/FabianOspinaLey-cv.png" alt="Fabian Alexander Ospina Leiva">
                         </div>
                     </div>
                 </div>
             </section>
-            <!--Fin Home section-->
-            <!--About section start-->
+
+            <!-- Perfil -->
             <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Acerca de mi</h2>
-                        </div>
+                        <div class="section-title padd-15"><h2>Perfil</h2></div>
                     </div>
                     <div class="row">
                         <div class="about-content padd-15">
                             <div class="row">
                                 <div class="about-text padd-15">
-                                    <h3>Me llamo Fabian y soy <span>desarrolador de páginas web</span> con</h3>
-                                    <p><i class="fa-solid fa-check"></i> <strong>Disciplina y Puntualidad:</strong>
-                                        Tengo capacidad para cumplir con horarios rigurosos y exigentes, una cualidad
-                                        indispensable para las jornadas de madrugada en Mercamadrid.</p>
-                                    <p><i class="fa-solid fa-check"></i> <strong>Responsabilidad y Honestidad:</strong>
-                                        Con experiencia práctica en la gestión de personal, equipos humanos en
-                                        situaciones de tensión y, control de recursos valiosos para el desarrollo de
-                                        operaciones tácticas y logísticas.</p>
-                                    <p><i class="fa-solid fa-check"></i> <strong>Trabajo Bajo Presión y Tolerancia al
-                                            Estrés:</strong> No me dejo llevar por el drama, me enfoco en lo que puedo
-                                        controlar y sigo ejecutando la tarea...</p>
+                                    <h3>Me llamo Fabian y soy <span>docente habilitado y profesional del negocio digital</span></h3>
+                                    <p class="lead">Perfil junior en formación con experiencia comercial y conocimientos técnicos. Mi forma de aprender es abrir, entender y hacer funcionar: de ahí nace mi forma de enseñar.</p>
+                                    <p><i class="fa-solid fa-check"></i> <strong>Experiencia comercial:</strong> desde 2022 me encargo de las compras en Mercamadrid para la frutería familiar ADG (negociación con proveedores, planificación y control de costes).</p>
+                                    <p><i class="fa-solid fa-check"></i> <strong>Conocimientos técnicos aplicados:</strong> HTML, CSS y JavaScript, bases de datos, automatización de procesos y uso de IA, siempre sobre proyectos reales.</p>
+                                    <p><i class="fa-solid fa-check"></i> <strong>Disciplina y gestión de equipos:</strong> suboficial del Ejército de Colombia entre 2006 y 2018 (sargento segundo, retirado), con mando y formación de personal a mi cargo.</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="personal-info padd-15">
                                     <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Nacido el: <span>11 de Julio de 1986</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Edad: <span>39 años</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Webside: <span>Proximamente</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>E-mail: <span>fabianospinaley@gmail.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Teléfono: <span>622 234 134</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Ciudad: <span>Madrid</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Disponibilidad: <span>Inmediata</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="#" class="btn">Teléfono</a>
-                                            <a href="#contact" class="btn hire-me">622 234 134</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 76%;"></div>
-                                                <div class="skill-percent">76%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML5</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 86%;"></div>
-                                                <div class="skill-percent">86%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>UX/UI</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 79%;"></div>
-                                                <div class="skill-percent">79%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>BOOTSTRAP 5</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 63%;"></div>
-                                                <div class="skill-percent">63%</div>
-                                            </div>
-                                        </div>
+                                        <div class="info-item padd-15"><p>E-mail: <span>fabianospinaley@gmail.com</span></p></div>
+                                        <div class="info-item padd-15"><p>Teléfono: <span>622 234 134</span></p></div>
+                                        <div class="info-item padd-15"><p>Ciudad: <span>Madrid</span></p></div>
+                                        <div class="info-item padd-15"><p>Disponibilidad: <span>Inmediata</span></p></div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trayectoria digital -->
+            <section class="about section" id="trayectoria">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15"><h2>Trayectoria digital</h2></div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>Proyecto propio: <span>ADG · Aroma de Guayaba</span></h3>
+                                    <p class="lead">Desde finales de 2025 desarrollo, sin contrato y como ayuda familiar, las herramientas digitales de la frutería ADG. Es experiencia práctica real, pero no laboral: no tengo contrato ni alta en el negocio, y por eso la documento en una memoria con evidencias.</p>
+                                </div>
+                            </div>
+                            <div class="card-grid">
+                                <div class="card"><div class="card-inner">
+                                    <h4><span><i class="fa-solid fa-cash-register"></i></span>TPV y cierre de caja</h4>
+                                    <p>Aplicación web con control de roles y permisos, turnos, cierre de caja y cuadre con el ticket de la báscula. Primer cierre real: octubre de 2026.</p>
+                                </div></div>
+                                <div class="card"><div class="card-inner">
+                                    <h4><span><i class="fa-solid fa-users"></i></span>CRM de clientes</h4>
+                                    <p>Alta de clientes con doble confirmación por correo, puntos de fidelidad y protección de datos personales.</p>
+                                </div></div>
+                                <div class="card"><div class="card-inner">
+                                    <h4><span><i class="fa-solid fa-cart-shopping"></i></span>Tienda online</h4>
+                                    <p>Catálogo, cesta, cobro con Stripe y correos de pedido. En fase de pruebas, pendiente de publicación.</p>
+                                </div></div>
+                            </div>
+                            <div class="row">
+                                <div class="padd-15">
+                                    <p>Tecnologías: <strong>JavaScript, HTML, CSS, Supabase (base de datos), Stripe, Resend (correo), git y GitHub.</strong></p>
+                                    <p class="pendiente"><i class="fa-solid fa-camera"></i> Las capturas de pantalla y el historial de versiones están en la memoria de evidencias (PDF).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Formación -->
+            <section class="about section" id="formacion">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15"><h2>Formación</h2></div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
                             <div class="row">
                                 <div class="education padd-15">
-                                    <h3 class="title">Estudios</h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
-                                                <!-- Item timeline -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2006 -
-                                                            2007</i></h3>
-                                                    <h4 class="timeline-title">Curso de Suboficial del Ejercito de Colombia</h4>
-                                                    <p class="timeline-text">Escuela Militar de Suboficiales "Sargento Inocencio Chincá" del Ejercito de Colombia.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2008</i></h3>
-                                                    <h4 class="timeline-title">Comandante Grupo EXDE</h4>
-                                                    <p class="timeline-text">Curso de Explosivos y Demoliciones en el Batallón de Ingenieros Militares "Pedro Nel Ospina" con el fin de brindar proteción y movilidad a las tropas en el área de operaciones.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2016</i></h3>
-                                                    <h4 class="timeline-title">Líder de Desminado Humanitario</h4>
-                                                    <p class="timeline-text">Curso de Desminado Humanitario en la Escuela de Soldados Profesionales en el municipio de Nilo Cundinamarca Colombia, donde se evaluan intensas practicas en terreno, examenes escritos y orales realizados por delegados de la ONU.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2019</i></h3>
-                                                    <h4 class="timeline-title">Curso de Control de Plagas</h4>
-                                                    <p class="timeline-text">Curso finaciado por el estado colombiano en el Centro Nacional de Aprendizaje SENA.</p>
+                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> Mar – Ago 2026</i></h3>
+                                                    <h4 class="timeline-title">SSCE0110 Habilitación para la docencia en grados A, B y C del sistema de formación profesional</h4>
+                                                    <p class="timeline-text">Certificado de profesionalidad (284 h de teoría y 96 h de prácticas), impartido por ASPASIA (IBECON 2003, S.L.) dentro de la formación ocupacional de la Comunidad de Madrid (curso FDEC_25_5205). Los seis módulos están calificados como <strong>apto</strong>; la certificación oficial de la Comunidad de Madrid está pendiente de expedición.</p>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2025</i></h3>
-                                                    <h4 class="timeline-title">Curso de Dearrollo Web</h4>
-                                                    <p class="timeline-text">Curso finaciado por el SEPE en el centro de formación ASPASIA.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title">Experiencia</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- Item timeline -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2007 -
-                                                            2010</i></h3>
-                                                    <h4 class="timeline-title">Cabo Tercero</h4>
-                                                    <p class="timeline-text">Comandante de Sección realizando operaciones de control territorial y administrando vidas, material de combate y tareas logísticas para el desarrollo de las diferentes misiones.</p>
+                                                    <h4 class="timeline-title">Curso de Desarrollo Web</h4>
+                                                    <p class="timeline-text">Formación financiada por el SEPE en el centro ASPASIA.</p>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2010 -
-                                                            2013</i></h3>
-                                                    <h4 class="timeline-title">Cabo Segundo</h4>
-                                                    <p class="timeline-text">Alternancia entre Suboficial de operaciones del Batallón de Ingenieros N° 14 "Batalla de Calibio" y Comandante de sección en el área de operaciones.</p>
+                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2025 – actualidad</i></h3>
+                                                    <h4 class="timeline-title">Formación continua</h4>
+                                                    <p class="timeline-text">HTML semántico, accesibilidad y SEO, y automatización con IA mediante cursos online y proyectos propios.</p>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2013 -
-                                                            2017</i></h3>
-                                                    <h4 class="timeline-title">Cabo Primero</h4>
-                                                    <p class="timeline-text">Alternancia entre Comandante de Pelotón en el Batallón de Combate Terrestre N° 60 Brigada Móvil 6 y Suboficial Operaciones en el Batallón Especial Energetico y Vial N° 13.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2017 -
-                                                            2018</i></h3>
-                                                    <h4 class="timeline-title">Sargento Segundo</h4>
-                                                    <p class="timeline-text">Alternancia entre Subocial de Coordinación Jurídica y Lider de Desminado Humanitario en el Batallón de Desminado Humanitario N°3.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2022 -
-                                                            Actualidad</i></h3>
-                                                    <h4 class="timeline-title">Compras para Pequeña Fruteria</h4>
-                                                    <p class="timeline-text text-skin-color-actualidad">Llevo los últimos 3 años encargandome de las compras en Mercamadrid para la frutería de mi pereja.</p>
+                                                    <h3 class="timeline-date"><i class="fa-solid fa-calendar"> 2006 – 2018</i></h3>
+                                                    <h4 class="timeline-title">Suboficial del Ejército de Colombia</h4>
+                                                    <p class="timeline-text">Curso de suboficiales y mando de secciones y pelotones: gestión de personas, material y logística bajo presión.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -269,253 +196,112 @@
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>
             </section>
-            <!--About section end-->
-            
-            <!-- <section class="service section" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Servicios</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa-solid fa-mobile"></i>
-                                </div>
-                                <h4>Diseño web</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro ipsum ex!</p>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa-solid fa-laptop-code"></i>
-                                </div>
-                                <h4>Diseño web</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro ipsum ex!</p>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa-solid fa-palette"></i>
-                                </div>
-                                <h4>Diseño web</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro ipsum ex!</p>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa-solid fa-code"></i>
-                                </div>
-                                <h4>Diseño web</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro ipsum ex!</p>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa-solid fa-search"></i>
-                                </div>
-                                <h4>Diseño web</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro ipsum ex!</p>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa-solid fa-bullhorn"></i>
-                                </div>
-                                <h4>Diseño web</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro ipsum ex!</p>
-                            </div>
-                        </div>
-                        
 
-                    </div>
-                </div>
-            </section>
-            
-            
-            <section class="portfolio section" id="portfolio">
+            <!-- Temario HTML -->
+            <section class="service section" id="temario">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portafolio</h2>
-                        </div>
+                        <div class="section-title padd-15"><h2>Temario básico de HTML</h2></div>
                     </div>
                     <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2>Últimos proyectos: </h2>
+                        <div class="about-content padd-15">
+                            <p class="lead">Propuesta de contenidos para un módulo inicial: cada bloque termina con un ejercicio práctico en el editor.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img"><img src="img/image1.jpeg" alt="image porfolio">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img"><img src="img/image2.jpeg" alt="image porfolio"></div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img"><img src="img/image3.jpeg" alt="image porfolio"></div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img"><img src="img/image4.jpeg" alt="image porfolio"></div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img"><img src="img/image5.jpeg" alt="image porfolio"></div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img"><img src="img/image8.jpeg" alt="image porfolio"></div>
-                            </div>
-                        </div>
-                        
+                    <div class="card-grid">
+                        <div class="card"><div class="card-inner">
+                            <h4><span>1</span>Tu primer archivo</h4>
+                            <ul>
+                                <li>Instalar y configurar VS Code</li>
+                                <li>Crear <code class="tag">index.html</code> y abrirlo en el navegador</li>
+                                <li>Guardar y recargar: el ciclo de trabajo</li>
+                            </ul>
+                        </div></div>
+                        <div class="card"><div class="card-inner">
+                            <h4><span>2</span>Etiquetas y atributos</h4>
+                            <ul>
+                                <li>Etiquetas de apertura, cierre y vacías</li>
+                                <li>Atributos: <code class="tag">href</code>, <code class="tag">src</code>, <code class="tag">alt</code>, <code class="tag">class</code></li>
+                                <li>Títulos, párrafos, listas, enlaces e imágenes</li>
+                            </ul>
+                        </div></div>
+                        <div class="card"><div class="card-inner">
+                            <h4><span>3</span>Partes del documento</h4>
+                            <ul>
+                                <li><code class="tag">&lt;!DOCTYPE html&gt;</code>, <code class="tag">html</code>, <code class="tag">head</code>, <code class="tag">body</code></li>
+                                <li>Qué va en el <code class="tag">head</code>: <code class="tag">meta</code>, <code class="tag">title</code>, enlaces</li>
+                                <li>Comentarios e indentación</li>
+                            </ul>
+                        </div></div>
+                        <div class="card"><div class="card-inner">
+                            <h4><span>4</span>El DOM</h4>
+                            <ul>
+                                <li>El navegador convierte el HTML en un árbol</li>
+                                <li>Padres, hijos y hermanos</li>
+                                <li>Inspeccionar una página con las herramientas del navegador</li>
+                            </ul>
+                        </div></div>
+                        <div class="card"><div class="card-inner">
+                            <h4><span>5</span>Estructura general</h4>
+                            <ul>
+                                <li>HTML semántico: <code class="tag">header</code>, <code class="tag">nav</code>, <code class="tag">main</code>, <code class="tag">section</code>, <code class="tag">footer</code></li>
+                                <li>Buenas prácticas y accesibilidad básica</li>
+                            </ul>
+                        </div></div>
+                        <div class="card"><div class="card-inner">
+                            <h4><span>★</span>Proyecto final</h4>
+                            <p>Cada alumno construye su propia página de presentación y la publica de forma gratuita en GitHub Pages, como hice con este CV.</p>
+                        </div></div>
                     </div>
                 </div>
             </section>
-            
-            
+
+            <!-- Carta -->
+            <section class="about section" id="carta">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15"><h2>Carta de presentación</h2></div>
+                    </div>
+                    <div class="row">
+                        <div class="padd-15">
+                            <div class="letter">
+                                <p>Estimada dirección:</p>
+                                <p>Me llamo Fabian Alexander Ospina Leiva y quisiera ofrecerme como docente de HTML en su centro. Soy titular del certificado de profesionalidad SSCE0110 (Habilitación para la docencia en grados A, B y C del sistema de formación profesional), cuyos seis módulos he superado con la calificación de apto; la certificación oficial de la Comunidad de Madrid está pendiente de expedición.</p>
+                                <p>No vengo con una carrera formal en informática y prefiero decirlo desde el principio. Vengo con práctica: desde febrero de 2026 desarrollo las herramientas digitales de la frutería familiar ADG (un sistema de caja, un CRM y una tienda online), con las mismas tecnologías que enseñaría en clase. Lo he hecho como ayuda familiar, sin contrato, y por eso adjunto una memoria con capturas y fechas que lo respalda. Antes, durante doce años, fui suboficial del Ejército de Colombia, donde aprendí a instruir y a dirigir equipos.</p>
+                                <p>Para un grupo que empieza de cero propongo un módulo básico: crear el archivo HTML en VS Code, etiquetas y atributos, partes del documento, el DOM y la estructura general. Todo con ejercicios que el alumno pueda ver funcionando en su navegador el mismo día.</p>
+                                <p>Quedo a su disposición para una entrevista o una clase de prueba.</p>
+                                <p>Atentamente,<br><strong>Fabian Alexander Ospina Leiva</strong><br>622 234 134 · fabianospinaley@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacto -->
             <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contacto</h2>
+                        <div class="section-title padd-15"><h2>Contacto</h2></div>
+                    </div>
+                    <div class="row">
+                        <div class="padd-15">
+                            <p><i class="fa-solid fa-envelope"></i> fabianospinaley@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i> 622 234 134</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Madrid</p>
+                            <a href="Fabian-Ospina-Leiva-CV-Memoria-Carta.pdf" download class="pdf-btn"><img src="img/Boton_PDF.png" alt="Descargar PDF"></a>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15">¿Eres periodista?¿Hazme una pregunta?</h3>
-                    <h4 class="contact-sub-title padd-15">YO VALGO PA' TO' </h4>
-                    <div class="row">
-                        
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <h4>Puedes llamarme al:</h4>
-                            <p>+34 666 666 666</p>
-                        </div>
-                        
-                        
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa-solid fa-map-marked-alt"></i>
-                            </div>
-                            <h4>Oficina:</h4>
-                            <p>Madrid</p>
-                        </div>
-                        
-                        
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <h4>Email</h4>
-                            <p>xaxi@gmail.com</p>
-                        </div>
-                        
-                        
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa-solid fa-globe-europe"></i>
-                            </div>
-                            <h4>Sitio web</h4>
-                            <p>www.xaxi.es</p>
-                        </div>
-                        
-                    </div> -->
-                    <!-- <h3 class="contact-title padd-15">CONTACTA CONMIGO</h3> -->
-                    <!-- <h4 class="contact-sub-title padd-15">NO PIERDAS TU OPORTUNIDAD</h4> -->
-                    <!--Contact Form Start-->
-                    <!-- <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nombre">
-                                        
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Asunto">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Mensaje"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn">Enviar Mensaje</button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div> -->
+                </div>
             </section>
-            <!--Contact section end-->
         </div>
-        <!--Fin contenido del Main-->
     </div>
-    <!--Fin contenedor del Main-->
+
     <!--Style Switcher Start-->
     <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fa-solid fa-cog fa-spin"></i>
-        </div>
-        <div class="day-night s-icon">
-            <i class="fas"></i>
-        </div>
+        <div class="style-switcher-toggler s-icon"><i class="fa-solid fa-cog fa-spin"></i></div>
+        <div class="day-night s-icon"><i class="fas"></i></div>
         <h4>Color del tema</h4>
         <div class="colors">
             <span class="color-1" onclick="setActiveStyle('color-1')"></span>
@@ -526,14 +312,12 @@
         </div>
     </div>
     <!--Style Switcher End-->
-    <!--ARCHIVO JS-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
         integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
-    <!--variables y datos constantes. Una variable es un dato que en un momento dado se le puede cambiar el valor, mientras que el dato constante es eso, constante, fijo. -->
-    </div>
 </body>
 
 </html>

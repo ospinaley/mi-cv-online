@@ -1,10 +1,10 @@
-/* ========== Alternar modo oscuro / diurno ========== */
+/* ========== Texto que se escribe solo en la portada ========== */
 let typed = new Typed(".typing", {
-    strings:["","Desarrollador web", "Asistente de operaciones", "Auxiliar de compras",], 
-    typeSpeed:100,
-    BackSpeed:60, 
-    loop:true
-}) 
+    strings: ["Docente de HTML y desarrollo web", "Profesional de negocio digital", "Especialista en e-commerce y automatización"],
+    typeSpeed: 70,
+    backSpeed: 40,
+    loop: true
+})
 
 // Selecciona el botón y el menú
 const navTogglerBtn = document.querySelector(".nav-toggler");
