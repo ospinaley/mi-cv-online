@@ -61,3 +61,17 @@ body { color: var(--text-black-700); }
     .pdf-btn img { transition: none; }
     .pdf-btn:hover img, .pdf-btn:focus-visible img { transform: none; }
 }
+
+/* Botón "Ver mi trayectoria": mismo efecto al pasar el ratón que los botones de descarga */
+.home-info .btn { transition: transform .2s ease, filter .2s ease; }
+.home-info .btn:hover,
+.home-info .btn:focus-visible {
+    transform: translateY(-4px) scale(1.05);
+    filter: brightness(1.1) drop-shadow(0 8px 10px rgba(0, 0, 0, .35));
+}
+.home-info .btn:active { transform: translateY(-1px) scale(1.02); }
+.home-info .btn:focus-visible { outline: 3px solid var(--skin-color); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+    .home-info .btn { transition: none; }
+    .home-info .btn:hover, .home-info .btn:focus-visible { transform: none; }
+}

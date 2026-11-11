@@ -11,6 +11,7 @@
   h1 { font-size: 22pt; margin: 0; } h2 { font-size: 13pt; margin: 16px 0 6px; color: #b3122c; border-bottom: 1.5px solid #b3122c; padding-bottom: 2px; }
   h3 { font-size: 11pt; margin: 10px 0 2px; } p { margin: 4px 0 8px; } ul { margin: 4px 0 8px; padding-left: 18px; }
   .cv { font-size: 10pt; line-height: 1.4; } .cv h2 { margin: 11px 0 4px; } .cv h3 { margin: 7px 0 1px; } .cv p { margin: 3px 0 6px; } .cv ul { margin: 3px 0 6px; }
+  .mem { font-size: 10pt; line-height: 1.45; } .mem table { font-size: 9.2pt; } .mem h2 { margin: 13px 0 5px; }
   .page { page-break-after: always; } .page:last-child { page-break-after: auto; }
   .head { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
   .head img { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; object-position: top; border: 2px solid #b3122c; }
@@ -71,7 +72,7 @@
 </div>
 
 <!-- ================= MEMORIA ================= -->
-<div class="page">
+<div class="page mem">
   <h1 style="font-size:18pt">Memoria de trayectoria digital autónoma</h1>
   <div class="sub">Fabian Alexander Ospina Leiva · Proyecto ADG (Aroma de Guayaba)</div>
 
@@ -106,7 +107,7 @@
   </table>
 
   <h2>4. Evidencias</h2>
-  <style>.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;margin:6px 0 10px} .fig{page-break-inside:avoid} .fig img{width:100%;height:58mm;object-fit:cover;object-position:top;border:1px solid #ccc;display:block} .fig p{font-size:8.5pt;color:#555;margin:3px 0 0;line-height:1.35}</style>
+  <style>.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;margin:6px 0 10px} .fig{page-break-inside:avoid} .fig img{width:100%;height:50mm;object-fit:cover;object-position:top;border:1px solid #ccc;display:block} .fig p{font-size:8.5pt;color:#555;margin:3px 0 0;line-height:1.35}</style>
     <div class="grid">
 <div class="fig"><img src="img/evidencias/github-repositorios.png" alt="Repositorios de GitHub"><p><strong>Evidencia 1 · Repositorios en GitHub.</strong> La app de ADG está en un repositorio privado (<em>aroma-de-guayaba</em>); este CV, en uno público (<em>mi-cv-online</em>).</p></div>
   <div class="fig"><img src="img/evidencias/evidencia-panel.png" alt="Panel de administración"><p><strong>Evidencia 2 · Panel de administración</strong> con los módulos de la app: cierre de caja, TPV, catálogo, tienda online, facturas, proveedores, turnos, control horario y auditoría.</p></div>
@@ -129,8 +130,11 @@
   <p>Es una forma real y actual de trabajar, y es también lo que puedo enseñar: a usar la IA con criterio, sin delegar en ella la responsabilidad.</p>
 
   <h2>5. Declaración</h2>
-  <p>Declaro que lo descrito es cierto y estoy disponible para demostrar cualquier punto en una entrevista o clase de prueba.</p>
-  <p>Madrid, a ____ de ____________ de 2026 &nbsp;&nbsp;&nbsp; Fdo.: Fabian Alexander Ospina Leiva</p>
+  <p style="page-break-after: avoid;">Declaro que lo descrito es cierto y estoy disponible para demostrar cualquier punto en una entrevista o clase de prueba.</p>
+  <div style="page-break-inside: avoid;">
+  <p>Madrid, a 11 de noviembre de 2026</p>
+  <p><br><br>Fdo.: Fabian Alexander Ospina Leiva</p>
+  </div>
 </div>
 
 </body>
