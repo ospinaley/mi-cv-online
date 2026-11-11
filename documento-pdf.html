@@ -10,6 +10,7 @@
   body { font-family: "Segoe UI", Arial, sans-serif; font-size: 10.5pt; line-height: 1.5; color: #222; margin: 0; }
   h1 { font-size: 22pt; margin: 0; } h2 { font-size: 13pt; margin: 16px 0 6px; color: #b3122c; border-bottom: 1.5px solid #b3122c; padding-bottom: 2px; }
   h3 { font-size: 11pt; margin: 10px 0 2px; } p { margin: 4px 0 8px; } ul { margin: 4px 0 8px; padding-left: 18px; }
+  .cv { font-size: 10pt; line-height: 1.4; } .cv h2 { margin: 11px 0 4px; } .cv h3 { margin: 7px 0 1px; } .cv p { margin: 3px 0 6px; } .cv ul { margin: 3px 0 6px; }
   .page { page-break-after: always; } .page:last-child { page-break-after: auto; }
   .head { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
   .head img { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; object-position: top; border: 2px solid #b3122c; }
@@ -23,7 +24,7 @@
 <body>
 
 <!-- ================= CV ================= -->
-<div class="page">
+<div class="page cv">
   <div class="head">
     <div>
       <h1>Fabian Alexander Ospina Leiva</h1>
@@ -42,8 +43,14 @@
   <p>Seis módulos calificados como apto (programación didáctica, materiales y recursos, impartición y tutorización, evaluación, orientación laboral y calidad, y prácticas profesionales no laborales). La certificación oficial de la Comunidad de Madrid está pendiente de expedición.</p>
   <h3>Curso de Desarrollo Web</h3>
   <p class="small">2025 · Financiado por el SEPE · Centro ASPASIA.</p>
-  <h3>Formación continua</h3>
-  <p class="small">2025 – actualidad · HTML semántico, accesibilidad y SEO; automatización con IA; proyectos propios.</p>
+  <h3>Formación en curso: voy adelantando cuatro cursos</h3>
+  <p class="small">2026 – en curso</p>
+  <ul>
+    <li>IFCD0127 Desarrollo web para comercio electrónico (150 h; 29 de octubre – 15 de diciembre de 2026).</li>
+    <li>MF0491_3 Programación web en el entorno cliente, del certificado de profesionalidad IFCD0210 Desarrollo de aplicaciones con tecnologías web (hasta el 23 de diciembre de 2026).</li>
+    <li>MF0493_3 Implantación de aplicaciones web en entornos internet, intranet y extranet, del mismo certificado (hasta el 23 de diciembre de 2026).</li>
+    <li>Curso de HTML de Platzi (HTML semántico, accesibilidad y SEO).</li>
+  </ul>
 
   <h2>Experiencia relacionada</h2>
   <h3>Desarrollo de herramientas digitales para ADG (Aroma de Guayaba)</h3>
@@ -56,7 +63,7 @@
   <h3>Compras en Mercamadrid para la frutería familiar ADG</h3>
   <p class="small">2022 – actualidad · Negociación con proveedores, planificación y control de costes.</p>
   <h3>Suboficial del Ejército de Colombia (sargento segundo, retirado)</h3>
-  <p class="small">2006 – 2018 · Mando de secciones y pelotones; gestión de personas, material y logística bajo presión.</p>
+  <p class="small">2006 – 2018 · Curso de suboficial; mando y control de secciones y pelotones de combate terrestre; gestión de personas, material y logística bajo presión.</p>
 
   <h2>Competencias</h2>
   <p><strong>Técnicas:</strong> HTML, CSS, JavaScript, React, git y GitHub, bases de datos (Supabase), pasarela de pago (Stripe), correo transaccional (Resend), automatización e IA aplicada.<br>
@@ -92,7 +99,7 @@
   <table>
     <tr><th style="width:22%">Proyecto</th><th>Qué hice</th><th style="width:24%">Competencia</th></tr>
     <tr><td>TPV y cierre de caja</td><td>Aplicación web con turnos, cierre de caja con desglose, cuadre con el ticket de la báscula, permisos por rol.</td><td>JavaScript, estructura de datos, lógica de negocio</td></tr>
-    <tr><td>CRM de clientes</td><td>Alta con doble confirmación, puntos de fidelidad, protección de campos sensibles.</td><td>Bases de datos, seguridad, protección de datos</td></tr>
+    <tr><td>CRM de clientes</td><td>Alta con doble confirmación, puntos de fidelización, protección de campos sensibles.</td><td>Bases de datos, seguridad, protección de datos</td></tr>
     <tr><td>Tienda online</td><td>Catálogo, cesta, cobro con Stripe, correos de pedido con Resend, política legal.</td><td>E-commerce, integración de servicios</td></tr>
     <tr><td>Portafolio web</td><td>CV publicado con HTML, CSS y JavaScript en GitHub Pages.</td><td>HTML semántico, publicación, git</td></tr>
   </table>
@@ -104,7 +111,7 @@
   <div class="fig"><img src="img/evidencias/evidencia-panel.png" alt="Panel de administración"><p><strong>Evidencia 2 · Panel de administración</strong> con los módulos de la app: cierre de caja, TPV, catálogo, tienda online, facturas, proveedores, turnos, control horario y auditoría.</p></div>
   <div class="fig"><img src="img/evidencias/evidencia-tpv.png" alt="Terminal punto de venta"><p><strong>Evidencia 3 · Terminal punto de venta (TPV)</strong> con un cliente socio fundador y sus puntos. El correo del cliente está oculto.</p></div>
   <div class="fig"><img src="img/evidencias/evidencia-crm.png" alt="CRM de clientes"><p><strong>Evidencia 4 · CRM de clientes («La Cosecha Privada»):</strong> contador de contactos, editor de historias y secuencia de bienvenida de 10 correos. La lista de contactos no se muestra por protección de datos.</p></div>
-  <div class="fig"><img src="img/evidencias/evidencia-tienda.png" alt="Tienda online"><p><strong>Evidencia 5 · Tienda online</strong> (entorno de pruebas): catálogo con filtros por categoría, búsqueda y puntos de fidelidad.</p></div>
+  <div class="fig"><img src="img/evidencias/evidencia-tienda.png" alt="Tienda online"><p><strong>Evidencia 5 · Tienda online</strong> (entorno de pruebas): catálogo con filtros por categoría, búsqueda y puntos de fidelización.</p></div>
   </div>
   <div class="fig"><img src="img/evidencias/evidencia-n8n.png" alt="Flujo de n8n" style="width:100%;height:auto;border:1px solid #ccc"><p style="font-size:8.5pt;color:#555;margin:3px 0 10px"><strong>Evidencia 6 · Automatización con n8n:</strong> flujo «Ingesta facturas proveedor» (publicado). Lee las facturas de proveedores que llegan por Gmail y las envía a la app para registrarlas.</p></div>
   <p><strong>Evidencia 7 · Historial de versiones</strong> de la app: 81 cambios registrados entre el 5 de julio y el 30 de octubre de 2026 (16 de ellos el 9 de octubre, día del primer cierre real). Se puede mostrar en directo en una entrevista.</p>
